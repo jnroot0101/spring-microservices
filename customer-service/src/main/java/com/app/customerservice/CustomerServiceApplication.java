@@ -38,5 +38,4 @@ public class CustomerServiceApplication {
             customerRepository.saveAll(customers);
         };
     }
-
 }
