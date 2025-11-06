@@ -1,3 +1,18 @@
 spring:
   application:
     name: service-discovery
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    registry-sync-retry-wait-ms: 5
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+server:
+  port: 8761
